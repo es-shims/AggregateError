@@ -11,6 +11,8 @@
 	"description": "ES Proposal spec-compliant shim for AggregateError",
 	"main": "index.js",
 	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -33,6 +35,11 @@
 		"url": "https://github.com/es-shims/AggregateError/issues"
 	},
 	"homepage": "https://github.com/es-shims/AggregateError#readme",
+	"devDependencies": {
+		"@ljharb/eslint-config": "^14.1.0",
+		"eslint": "^6.5.1",
+		"evalmd": "^0.0.19"
+	},
 	"engines": {
 		"node": ">= 0.4"
 	}
