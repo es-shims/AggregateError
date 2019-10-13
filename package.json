@@ -1,0 +1,39 @@
+{
+	"name": "es-aggregate-error",
+	"version": "0.0.0",
+	"contributors": [
+		{
+			"name": "Jordan Harband",
+			"email": "ljharb@gmail.com",
+			"url": "http://ljharb.codes"
+		}
+	],
+	"description": "ES Proposal spec-compliant shim for AggregateError",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/es-shims/AggregateError.git"
+	},
+	"keywords": [
+		"AggregateError",
+		"Error",
+		"aggregate",
+		"errors",
+		"nativeerror",
+		"es-shim API",
+		"shim",
+		"polyfill"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/es-shims/AggregateError/issues"
+	},
+	"homepage": "https://github.com/es-shims/AggregateError#readme",
+	"engines": {
+		"node": ">= 0.4"
+	}
+}
