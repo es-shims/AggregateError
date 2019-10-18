@@ -41,6 +41,12 @@
 		"url": "https://github.com/es-shims/AggregateError/issues"
 	},
 	"homepage": "https://github.com/es-shims/AggregateError#readme",
+	"dependencies": {
+		"define-properties": "^1.1.3",
+		"es-abstract": "^1.16.0",
+		"function-bind": "^1.1.1",
+		"globalthis": "^1.0.0"
+	},
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
 		"@ljharb/eslint-config": "^14.0.2",
