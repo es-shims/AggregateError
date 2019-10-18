@@ -12,8 +12,14 @@
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"pretest": "npm run lint && es-shim-api --bound",
+		"test": "npm run --silent tests-only",
+		"posttest": "npx aud",
+		"tests-only": "npm run --silent test:shimmed && npm run --silent test:module",
+		"test:shimmed": "node test/shimmed",
+		"test:module": "node test",
+		"test:native": "node test/native",
+		"coverage": "covert test/*.js"
 	},
 	"repository": {
 		"type": "git",
@@ -36,9 +42,14 @@
 	},
 	"homepage": "https://github.com/es-shims/AggregateError#readme",
 	"devDependencies": {
-		"@ljharb/eslint-config": "^14.1.0",
-		"eslint": "^6.5.1",
-		"evalmd": "^0.0.19"
+		"@es-shims/api": "^2.1.2",
+		"@ljharb/eslint-config": "^14.0.2",
+		"es6-shim": "^0.35.5",
+		"eslint": "^6.3.0",
+		"for-each": "^0.3.3",
+		"functions-have-names": "^1.1.1",
+		"object-inspect": "^1.6.0",
+		"tape": "^4.11.0"
 	},
 	"engines": {
 		"node": ">= 0.4"
