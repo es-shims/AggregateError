@@ -10,7 +10,7 @@ var $Error = GetIntrinsic('%Error%');
 var $errorToString = callBound('Error.prototype.toString');
 var $slice = callBound('Array.prototype.slice');
 
-var SLOT = require('./slot');
+var SLOT = require('internal-slot');
 
 // eslint-disable-next-line func-style
 function AggregateError(errors, message) {
