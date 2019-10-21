@@ -8,6 +8,7 @@
 	},
 
 	"rules": {
+		"id-length": 1,
 		"max-params": [2, 3],
 		"new-cap": [2, { "capIsNewExceptions": ["GetIntrinsic", "GetIterator", "IsArray", "IterableToList", "OrdinarySetPrototypeOf", "Type"] }],
 		"operator-linebreak": [2, "before"],

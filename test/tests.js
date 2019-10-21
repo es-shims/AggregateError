@@ -1,6 +1,7 @@
 'use strict';
 
 var functionsHaveNames = require('functions-have-names')();
+var boundFunctionsHaveNames = require('functions-have-names').boundFunctionsHaveNames();
 var forEach = require('for-each');
 var inspect = require('object-inspect');
 
@@ -10,7 +11,7 @@ module.exports = function (AggregateError, t) {
 
 		st.equal(AggregateError.length, 2, 'AggregateError has a length of 2');
 
-		st.test('Function name', { skip: !functionsHaveNames }, function (s2t) {
+		st.test('Function name', { skip: !functionsHaveNames || !boundFunctionsHaveNames }, function (s2t) {
 			s2t.equal(AggregateError.name, 'AggregateError', 'AggregateError has name "AggregateError"');
 			s2t.end();
 		});
