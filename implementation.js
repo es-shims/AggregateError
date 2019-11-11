@@ -7,7 +7,6 @@ var getIteratorMethod = require('es-abstract/helpers/getIteratorMethod');
 var define = require('define-properties');
 
 var $Error = GetIntrinsic('%Error%');
-var $errorToString = callBound('Error.prototype.toString');
 var $slice = callBound('Array.prototype.slice');
 
 var SLOT = require('internal-slot');
@@ -30,10 +29,7 @@ var proto = AggregateError.prototype;
 define(AggregateError.prototype, {
 	constructor: AggregateError,
 	message: '',
-	name: 'AggregateError',
-	toString: function toString() { // eslint-disable-line func-name-matching
-		return $errorToString(this);
-	}
+	name: 'AggregateError'
 });
 
 if (define.supportsDescriptors) {
