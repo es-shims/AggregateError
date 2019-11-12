@@ -71,6 +71,7 @@
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
+		"template": "keepachangelog",
 		"unreleased": false,
 		"commitLimit": false,
 		"backfillLimit": false
