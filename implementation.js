@@ -1,6 +1,11 @@
 'use strict';
 
-var ES = require('es-abstract/es2019');
+var AdvanceStringIndex = require('es-abstract/2019/AdvanceStringIndex');
+var GetMethod = require('es-abstract/2019/GetMethod');
+var IsArray = require('es-abstract/2019/IsArray');
+var IterableToList = require('es-abstract/2019/IterableToList');
+var OrdinarySetPrototypeOf = require('es-abstract/2019/OrdinarySetPrototypeOf');
+var Type = require('es-abstract/2019/Type');
 var GetIntrinsic = require('es-abstract/GetIntrinsic');
 var callBound = require('es-abstract/helpers/callBound');
 var getIteratorMethod = require('es-abstract/helpers/getIteratorMethod');
@@ -13,9 +18,14 @@ var SLOT = require('internal-slot');
 
 // eslint-disable-next-line func-style
 function AggregateError(errors, message) {
-	var errorsList = ES.IterableToList(errors, getIteratorMethod(ES, errors));
+	var errorsList = IterableToList(errors, getIteratorMethod({
+		AdvanceStringIndex: AdvanceStringIndex,
+		GetMethod: GetMethod,
+		IsArray: IsArray,
+		Type: Type
+	}, errors));
 	var error = new $Error(message);
-	ES.OrdinarySetPrototypeOf(error, proto); // eslint-disable-line no-use-before-define
+	OrdinarySetPrototypeOf(error, proto); // eslint-disable-line no-use-before-define
 	delete error.constructor;
 	if (define.supportsDescriptors) {
 		SLOT.set(error, '[[AggregateErrors]]', errorsList);
@@ -43,6 +53,6 @@ if (define.supportsDescriptors) {
 	});
 }
 
-ES.OrdinarySetPrototypeOf(AggregateError.prototype, Error.prototype);
+OrdinarySetPrototypeOf(AggregateError.prototype, Error.prototype);
 
 module.exports = AggregateError;
