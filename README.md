@@ -26,7 +26,7 @@ assert.equal(error.message, 'this is two kinds of errors');
 
 AggregateError.shim(); // will be a no-op if not needed
 
-assert.equal(globalThis.AggregateError, AggregateError);
+assert.ok(new globalThis.AggregateError([]) instanceof AggregateError);
 ```
 
 ## Tests
