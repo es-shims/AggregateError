@@ -34,8 +34,8 @@ Simply clone the repo, `npm install`, and run `npm test`
 
 [package-url]: https://npmjs.com/package/es-aggregate-error
 [npm-version-svg]: http://versionbadg.es/es-shims/AggregateError.svg
-[travis-svg]: https://travis-ci.org/es-shims/AggregateError.svg
-[travis-url]: https://travis-ci.org/es-shims/AggregateError
+[travis-svg]: https://travis-ci.com/es-shims/AggregateError.svg?branch=master
+[travis-url]: https://travis-ci.com/github/es-shims/AggregateError
 [deps-svg]: https://david-dm.org/es-shims/AggregateError.svg
 [deps-url]: https://david-dm.org/es-shims/AggregateError
 [dev-deps-svg]: https://david-dm.org/es-shims/AggregateError/dev-status.svg
