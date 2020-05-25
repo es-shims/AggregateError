@@ -53,8 +53,7 @@
 		"es-abstract": "^1.17.5",
 		"function-bind": "^1.1.1",
 		"functions-have-names": "^1.2.1",
-		"globalthis": "^1.0.1",
-		"internal-slot": "^1.0.2"
+		"globalthis": "^1.0.1"
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
