@@ -15,16 +15,18 @@ var $Error = GetIntrinsic('%Error%');
 
 // eslint-disable-next-line func-style
 function AggregateError(errors, message) {
+	var error = new $Error(message);
+	OrdinarySetPrototypeOf(error, proto); // eslint-disable-line no-use-before-define
+	delete error.constructor;
+
 	var errorsList = IterableToList(errors, getIteratorMethod({
 		AdvanceStringIndex: AdvanceStringIndex,
 		GetMethod: GetMethod,
 		IsArray: IsArray,
 		Type: Type
 	}, errors));
-	var error = new $Error(message);
-	OrdinarySetPrototypeOf(error, proto); // eslint-disable-line no-use-before-define
-	delete error.constructor;
 	CreateDataPropertyOrThrow(error, 'errors', errorsList);
+
 	return error;
 }
 var proto = AggregateError.prototype;
