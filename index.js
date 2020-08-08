@@ -10,10 +10,12 @@ var shim = require('./shim');
 
 var polyfill = getPolyfill();
 var bound = bind.call(polyfill);
-if (functionsHaveConfigurableNames) {
-	Object.defineProperty(bound, 'name', { value: polyfill.name });
+if (Object.defineProperty) {
+	if (functionsHaveConfigurableNames) {
+		Object.defineProperty(bound, 'name', { value: polyfill.name });
+	}
+	Object.defineProperty(bound, 'prototype', { value: polyfill.prototype });
 }
-bound.prototype = polyfill.prototype;
 
 define(bound, {
 	getPolyfill: getPolyfill,
