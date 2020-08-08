@@ -77,7 +77,8 @@
 		"template": "keepachangelog",
 		"unreleased": false,
 		"commitLimit": false,
-		"backfillLimit": false
+		"backfillLimit": false,
+		"hideCredit": true
 	},
 	"testling": {
 		"files": "./test/index.js"
