@@ -52,6 +52,4 @@ module.exports = function (AggregateError, t) {
 
 		st.end();
 	});
-
-	return t.comment('tests completed');
 };
