@@ -60,6 +60,7 @@
 		"@ljharb/eslint-config": "^17.1.0",
 		"aud": "^1.1.2",
 		"auto-changelog": "^2.2.0",
+		"covert": "^1.1.1",
 		"es6-shim": "^0.35.5",
 		"eslint": "^7.6.0",
 		"evalmd": "^0.0.19",
