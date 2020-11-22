@@ -14,15 +14,13 @@
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\"",
 		"prepublish": "safe-publish-latest",
+		"prelint": "evalmd README.md",
 		"lint": "eslint .",
-		"postlint": "evalmd README.md",
-		"pretest": "npm run lint && es-shim-api --bound",
-		"test": "npm run --silent tests-only",
+		"postlint": "es-shim-api --bound",
+		"pretest": "npm run lint",
+		"test": "npm run tests-only",
 		"posttest": "npx aud --production",
-		"tests-only": "npm run --silent test:shimmed && npm run --silent test:module",
-		"test:shimmed": "node test/shimmed",
-		"test:module": "node test",
-		"test:native": "node test/native",
+		"tests-only": "tape 'test/**/*.js'",
 		"coverage": "covert test/*.js"
 	},
 	"repository": {
@@ -65,6 +63,7 @@
 		"eslint": "^7.6.0",
 		"evalmd": "^0.0.19",
 		"for-each": "^0.3.3",
+		"has-strict-mode": "^1.0.0",
 		"object-inspect": "^1.8.0",
 		"safe-publish-latest": "^1.1.4",
 		"tape": "^5.0.1"
