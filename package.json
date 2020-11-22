@@ -19,9 +19,8 @@
 		"postlint": "es-shim-api --bound",
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
-		"posttest": "npx aud --production",
-		"tests-only": "tape 'test/**/*.js'",
-		"coverage": "covert test/*.js"
+		"posttest": "aud --production",
+		"tests-only": "nyc tape 'test/**/*.js'"
 	},
 	"repository": {
 		"type": "git",
@@ -58,12 +57,12 @@
 		"@ljharb/eslint-config": "^17.1.0",
 		"aud": "^1.1.2",
 		"auto-changelog": "^2.2.0",
-		"covert": "^1.1.1",
 		"es6-shim": "^0.35.5",
 		"eslint": "^7.6.0",
 		"evalmd": "^0.0.19",
 		"for-each": "^0.3.3",
 		"has-strict-mode": "^1.0.0",
+		"nyc": "^10.3.2",
 		"object-inspect": "^1.8.0",
 		"safe-publish-latest": "^1.1.4",
 		"tape": "^5.0.1"
