@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.5](https://github.com/es-shims/AggregateError/compare/v1.0.4...v1.0.5) - 2020-11-22
+
+### Commits
+
+- [Tests] migrate tests to Github Actions [`1b83d28`](https://github.com/es-shims/AggregateError/commit/1b83d2853482d8aaa7529c663c34e476ed052bcd)
+- [Tests] add `implementation` test; run `es-shim-api` in postlint; use `tape` runner [`952f9a2`](https://github.com/es-shims/AggregateError/commit/952f9a25698df829c356b8586c934f65d7afb19d)
+- [Tests] run `nyc` on all tests [`ce5728a`](https://github.com/es-shims/AggregateError/commit/ce5728a4842374fb6349e3dcb11e56991d19fcb3)
+- [Deps] update `es-abstract`; use `get-intrinsic` where applicable [`b4999f9`](https://github.com/es-shims/AggregateError/commit/b4999f935e98e3292c582d6ae538c7e5d326021a)
+- [actions] add "Allow Edits" workflow [`493b21d`](https://github.com/es-shims/AggregateError/commit/493b21d1d103d38e2f017dcc86870373c60635ac)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `es6-shim` [`43cc5ca`](https://github.com/es-shims/AggregateError/commit/43cc5cae65010f5699cd650174f01550ea43fe28)
+- [actions] switch Automatic Rebase workflow to `pull_request_target` event [`95c0a09`](https://github.com/es-shims/AggregateError/commit/95c0a09d1100eb5bd3a1d49c381df0e6ea052ab3)
+
 ## [v1.0.4](https://github.com/es-shims/AggregateError/compare/v1.0.3...v1.0.4) - 2020-08-08
 
 ### Fixed
