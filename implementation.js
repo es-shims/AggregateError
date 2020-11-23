@@ -1,13 +1,13 @@
 'use strict';
 
-var AdvanceStringIndex = require('es-abstract/2019/AdvanceStringIndex');
-var CreateDataPropertyOrThrow = require('es-abstract/2019/CreateDataPropertyOrThrow');
-var GetMethod = require('es-abstract/2019/GetMethod');
-var IsArray = require('es-abstract/2019/IsArray');
-var IterableToList = require('es-abstract/2019/IterableToList');
-var OrdinarySetPrototypeOf = require('es-abstract/2019/OrdinarySetPrototypeOf');
-var Type = require('es-abstract/2019/Type');
-var GetIntrinsic = require('es-abstract/GetIntrinsic');
+var AdvanceStringIndex = require('es-abstract/2020/AdvanceStringIndex');
+var CreateDataPropertyOrThrow = require('es-abstract/2020/CreateDataPropertyOrThrow');
+var GetMethod = require('es-abstract/2020/GetMethod');
+var IsArray = require('es-abstract/2020/IsArray');
+var IterableToList = require('es-abstract/2020/IterableToList');
+var OrdinarySetPrototypeOf = require('es-abstract/2020/OrdinarySetPrototypeOf');
+var Type = require('es-abstract/2020/Type');
+var GetIntrinsic = require('get-intrinsic');
 var getIteratorMethod = require('es-abstract/helpers/getIteratorMethod');
 var define = require('define-properties');
 
