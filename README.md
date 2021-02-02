@@ -1,6 +1,5 @@
 # es-aggregate-error <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
-[![Build Status][travis-svg]][travis-url]
 [![dependency status][deps-svg]][deps-url]
 [![dev dependency status][dev-deps-svg]][dev-deps-url]
 [![License][license-image]][license-url]
@@ -33,15 +32,13 @@ assert.ok(new globalThis.AggregateError([]) instanceof AggregateError);
 Simply clone the repo, `npm install`, and run `npm test`
 
 [package-url]: https://npmjs.com/package/es-aggregate-error
-[npm-version-svg]: http://versionbadg.es/es-shims/AggregateError.svg
-[travis-svg]: https://travis-ci.com/es-shims/AggregateError.svg?branch=master
-[travis-url]: https://travis-ci.com/github/es-shims/AggregateError
+[npm-version-svg]: https://versionbadg.es/es-shims/AggregateError.svg
 [deps-svg]: https://david-dm.org/es-shims/AggregateError.svg
 [deps-url]: https://david-dm.org/es-shims/AggregateError
 [dev-deps-svg]: https://david-dm.org/es-shims/AggregateError/dev-status.svg
 [dev-deps-url]: https://david-dm.org/es-shims/AggregateError#info=devDependencies
 [npm-badge-png]: https://nodei.co/npm/es-aggregate-error.png?downloads=true&stars=true
-[license-image]: http://img.shields.io/npm/l/es-aggregate-error.svg
+[license-image]: https://img.shields.io/npm/l/es-aggregate-error.svg
 [license-url]: LICENSE
-[downloads-image]: http://img.shields.io/npm/dm/es-aggregate-error.svg
-[downloads-url]: http://npm-stat.com/charts.html?package=es-aggregate-error
+[downloads-image]: https://img.shields.io/npm/dm/es-aggregate-error.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=es-aggregate-error
