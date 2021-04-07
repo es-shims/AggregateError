@@ -1,6 +1,6 @@
 'use strict';
 
-var index = require('../auto');
+require('../auto');
 
 var test = require('tape');
 
