@@ -1,15 +1,15 @@
 'use strict';
 
-var AdvanceStringIndex = require('es-abstract/2020/AdvanceStringIndex');
-var CreateDataPropertyOrThrow = require('es-abstract/2020/CreateDataPropertyOrThrow');
-var GetMethod = require('es-abstract/2020/GetMethod');
-var IsArray = require('es-abstract/2020/IsArray');
-var IterableToList = require('es-abstract/2020/IterableToList');
-var OrdinarySetPrototypeOf = require('es-abstract/2020/OrdinarySetPrototypeOf');
-var Type = require('es-abstract/2020/Type');
+var AdvanceStringIndex = require('es-abstract/2021/AdvanceStringIndex');
+var CreateDataPropertyOrThrow = require('es-abstract/2021/CreateDataPropertyOrThrow');
+var CreateMethodProperty = require('es-abstract/2021/CreateMethodProperty');
+var GetMethod = require('es-abstract/2021/GetMethod');
+var IsArray = require('es-abstract/2021/IsArray');
+var IterableToList = require('es-abstract/2021/IterableToList');
+var OrdinarySetPrototypeOf = require('es-abstract/2021/OrdinarySetPrototypeOf');
+var Type = require('es-abstract/2021/Type');
 var GetIntrinsic = require('get-intrinsic');
 var getIteratorMethod = require('es-abstract/helpers/getIteratorMethod');
-var define = require('define-properties');
 
 var $Error = GetIntrinsic('%Error%');
 
@@ -31,11 +31,13 @@ function AggregateError(errors, message) {
 }
 var proto = AggregateError.prototype;
 
-define(AggregateError.prototype, {
-	constructor: AggregateError,
-	message: '',
-	name: 'AggregateError'
-});
+if (
+	!CreateMethodProperty(proto, 'constructor', AggregateError)
+	|| !CreateMethodProperty(proto, 'message', '')
+	|| !CreateMethodProperty(proto, 'name', 'AggregateError')
+) {
+	throw new $Error('unable to install AggregateError.prototype properties; please report this!');
+}
 
 OrdinarySetPrototypeOf(AggregateError.prototype, Error.prototype);
 

@@ -13,6 +13,7 @@
 		"new-cap": [2, {
 			"capIsNewExceptions": [
 				"CreateDataPropertyOrThrow",
+				"CreateMethodProperty",
 				"GetIntrinsic",
 				"GetIterator",
 				"IsArray",
