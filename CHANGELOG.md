@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.6](https://github.com/es-shims/AggregateError/compare/v1.0.5...v1.0.6) - 2021-09-30
+
+### Commits
+
+- [actions] use `node/install` instead of `node/run`; use `codecov` action [`5a9b28c`](https://github.com/es-shims/AggregateError/commit/5a9b28ca0faadd38c069a2c929b8f10ed7b105c5)
+- [Deps] update `es-abstract` [`9d62677`](https://github.com/es-shims/AggregateError/commit/9d626773706fbff8ca7708f9a29601963140222c)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `@es-shims/api`, `aud`, `auto-changelog`, `object-inspect`, `tape` [`2c14b62`](https://github.com/es-shims/AggregateError/commit/2c14b62eacaae76f619955fdfa37aaed91fccbac)
+- [readme] fix repo URLs; remove travis badge [`5097d6a`](https://github.com/es-shims/AggregateError/commit/5097d6a3d326a654ab838edf0672c3e89c6abf32)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `tape` [`cf7500b`](https://github.com/es-shims/AggregateError/commit/cf7500b762e0abce580f9b290d209d21ff0b9f00)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `has-strict-mode`, `object-inspect`, `tape` [`41f8949`](https://github.com/es-shims/AggregateError/commit/41f8949f96872a694d04fe7e9a9e2e28cace1367)
+- [actions] update workflows [`04d88f9`](https://github.com/es-shims/AggregateError/commit/04d88f91142d5a0e22318a976927255677ed7f1f)
+- [readme] add github actions/codecov badges [`3e84f08`](https://github.com/es-shims/AggregateError/commit/3e84f085283e718339768cecf789aa670805d14c)
+- [Deps] update `es-abstract`, `get-intrinsic`, `globalthis` [`70e9947`](https://github.com/es-shims/AggregateError/commit/70e9947169a976680a9db0cfdd68b57088412bb2)
+- [Deps] update `es-abstract`, `functions-have-names`, `get-iintrinsic` [`e68ae0b`](https://github.com/es-shims/AggregateError/commit/e68ae0b63a6afec14eda250df3b719e3dcdf4b6b)
+- [meta] use `prepublishOnly`, for npm 7+ [`2858f55`](https://github.com/es-shims/AggregateError/commit/2858f55c31fa713f38249e8cd4e7ee5c75eac458)
+- [Tests] improve coverage [`ab5858a`](https://github.com/es-shims/AggregateError/commit/ab5858ac4c1191bb68b987e7a31221ea1c517cf1)
+
 ## [v1.0.5](https://github.com/es-shims/AggregateError/compare/v1.0.4...v1.0.5) - 2020-11-22
 
 ### Commits
