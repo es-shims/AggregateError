@@ -3,13 +3,8 @@
 
 	"extends": "@ljharb",
 
-	"globals": {
-		"AggregateError": false
-	},
-
 	"rules": {
 		"id-length": 1,
-		"max-params": [2, 3],
 		"new-cap": [2, {
 			"capIsNewExceptions": [
 				"CreateDataPropertyOrThrow",
@@ -22,6 +17,5 @@
 				"Type"
 			],
 		}],
-		"operator-linebreak": [2, "before"],
 	},
 }
