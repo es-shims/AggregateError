@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.8](https://github.com/es-shims/AggregateError/compare/v1.0.7...v1.0.8) - 2022-05-04
+
+### Commits
+
+- [actions] reuse common workflows [`551e610`](https://github.com/es-shims/AggregateError/commit/551e6109bf7782949290c05f42d67ebea5de2bd8)
+- [meta] use `npmignore` to autogenerate an npmignore file [`2b9c9f6`](https://github.com/es-shims/AggregateError/commit/2b9c9f6c214d176ec018279e651538c7709cb550)
+- [Fix] ensure `AggregateError.prototype` is nonwritable [`53c59b4`](https://github.com/es-shims/AggregateError/commit/53c59b4f03480a2bfcae67530b15b857b06323f5)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `@es-shims/api`, `safe-publish-latest`, `tape` [`db50863`](https://github.com/es-shims/AggregateError/commit/db50863f715ae15f7fb00a3e745f018d719382b5)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `object-inspect`, `tape` [`ca73cf7`](https://github.com/es-shims/AggregateError/commit/ca73cf76f9795288be5f07d71afde77416cc6974)
+- [actions] update codecov uploader [`e5689ca`](https://github.com/es-shims/AggregateError/commit/e5689ca9b5a4b6a452de8c1a2ac4392ca154b313)
+- [Deps] update `define-properties`, `es-abstract`, `functions-have-names` [`e0b0863`](https://github.com/es-shims/AggregateError/commit/e0b08630cd432882b1689738a0ff684b8b574634)
+- [Deps] update `es-abstract` [`d41de34`](https://github.com/es-shims/AggregateError/commit/d41de34a832d2905f89aada97066e23365b6d223)
+
 ## [v1.0.7](https://github.com/es-shims/AggregateError/compare/v1.0.6...v1.0.7) - 2021-09-30
 
 ### Commits
