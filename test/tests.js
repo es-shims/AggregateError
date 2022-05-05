@@ -4,6 +4,7 @@ var functionsHaveNames = require('functions-have-names')();
 var boundFunctionsHaveNames = require('functions-have-names').boundFunctionsHaveNames();
 var forEach = require('for-each');
 var inspect = require('object-inspect');
+var hasPropertyDescriptors = require('has-property-descriptors')();
 
 module.exports = function (AggregateError, t) {
 	t.test('constructor', function (st) {
@@ -15,6 +16,18 @@ module.exports = function (AggregateError, t) {
 			s2t.equal(AggregateError.name, 'AggregateError', 'AggregateError has name "AggregateError"');
 			s2t.end();
 		});
+
+		if (hasPropertyDescriptors) {
+			st.deepEqual(
+				Object.getOwnPropertyDescriptor(AggregateError, 'prototype'),
+				{
+					configurable: false,
+					enumerable: false,
+					value: AggregateError.prototype,
+					writable: false
+				}
+			);
+		}
 
 		st.end();
 	});

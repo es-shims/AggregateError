@@ -10,6 +10,7 @@ var OrdinarySetPrototypeOf = require('es-abstract/2021/OrdinarySetPrototypeOf');
 var Type = require('es-abstract/2021/Type');
 var GetIntrinsic = require('get-intrinsic');
 var getIteratorMethod = require('es-abstract/helpers/getIteratorMethod');
+var hasPropertyDescriptors = require('has-property-descriptors')();
 
 var $Error = GetIntrinsic('%Error%');
 
@@ -28,6 +29,9 @@ function AggregateError(errors, message) {
 	CreateDataPropertyOrThrow(error, 'errors', errorsList);
 
 	return error;
+}
+if (hasPropertyDescriptors) {
+	Object.defineProperty(AggregateError, 'prototype', { writable: false });
 }
 var proto = AggregateError.prototype;
 

@@ -52,7 +52,8 @@
 		"function-bind": "^1.1.1",
 		"functions-have-names": "^1.2.3",
 		"get-intrinsic": "^1.1.1",
-		"globalthis": "^1.0.2"
+		"globalthis": "^1.0.2",
+		"has-property-descriptors": "^1.0.0"
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.2.3",
