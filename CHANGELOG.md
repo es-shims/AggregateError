@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.9](https://github.com/es-shims/AggregateError/compare/v1.0.8...v1.0.9) - 2022-11-02
+
+### Commits
+
+- [Deps] update `es-abstract`, `get-intrinsic`, `globalthis` [`8fe0dd4`](https://github.com/es-shims/AggregateError/commit/8fe0dd490d9ce21b6a0ab67518d1b2320fe3c74b)
+- [actions] update rebase action to use reusable workflow [`12fbd34`](https://github.com/es-shims/AggregateError/commit/12fbd341e3908b76294b1799b92c4c12fb876647)
+- [Dev Deps] update `aud`, `object-inspect`, `tape` [`035dade`](https://github.com/es-shims/AggregateError/commit/035dade12d1a5fc62fb40b891b308b9c94f840cb)
+
 ## [v1.0.8](https://github.com/es-shims/AggregateError/compare/v1.0.7...v1.0.8) - 2022-05-04
 
 ### Commits
