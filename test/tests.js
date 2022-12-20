@@ -65,4 +65,22 @@ module.exports = function (AggregateError, t) {
 
 		st.end();
 	});
+
+	t.test('as a function', function (st) {
+		var one = new TypeError('one!');
+		var two = new EvalError('two!');
+		var errors = [one, two];
+		var message = 'i am an aggregate error';
+		var error = AggregateError(errors, message);
+
+		st.equal(error instanceof AggregateError, true, 'error is an instanceof AggregateError');
+		st.equal(error instanceof Error, true, 'error is an instanceof Error');
+
+		st.equal(error.message, message, 'error.message is expected');
+
+		st.notEqual(error.errors, errors, 'error.errors is !== provided errors');
+		st.deepEqual(error.errors, errors, 'error.errors is deeply equal to provided errors');
+
+		st.end();
+	});
 };

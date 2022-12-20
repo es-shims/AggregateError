@@ -5,8 +5,10 @@
 
 	"rules": {
 		"id-length": 1,
+		"max-lines-per-function": 0,
 		"new-cap": [2, {
 			"capIsNewExceptions": [
+				"AggregateError",
 				"CreateDataPropertyOrThrow",
 				"CreateMethodProperty",
 				"GetIntrinsic",
