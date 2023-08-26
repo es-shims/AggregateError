@@ -13,10 +13,8 @@
 				"CreateMethodProperty",
 				"GetIntrinsic",
 				"GetIterator",
-				"IsArray",
-				"IterableToList",
+				"IteratorToList",
 				"OrdinarySetPrototypeOf",
-				"Type"
 			],
 		}],
 	},

@@ -1,16 +1,13 @@
 'use strict';
 
-var AdvanceStringIndex = require('es-abstract/2022/AdvanceStringIndex');
-var CreateDataPropertyOrThrow = require('es-abstract/2022/CreateDataPropertyOrThrow');
-var CreateMethodProperty = require('es-abstract/2022/CreateMethodProperty');
-var GetMethod = require('es-abstract/2022/GetMethod');
-var IsArray = require('es-abstract/2022/IsArray');
-var IterableToList = require('es-abstract/2022/IterableToList');
-var OrdinarySetPrototypeOf = require('es-abstract/2022/OrdinarySetPrototypeOf');
-var Type = require('es-abstract/2022/Type');
-var GetIntrinsic = require('get-intrinsic');
-var getIteratorMethod = require('es-abstract/helpers/getIteratorMethod');
+var CreateDataPropertyOrThrow = require('es-abstract/2023/CreateDataPropertyOrThrow');
+var CreateMethodProperty = require('es-abstract/2023/CreateMethodProperty');
+var GetIterator = require('es-abstract/2023/GetIterator');
 var hasPropertyDescriptors = require('has-property-descriptors')();
+var IteratorToList = require('es-abstract/2023/IteratorToList');
+var OrdinarySetPrototypeOf = require('es-abstract/2023/OrdinarySetPrototypeOf');
+
+var GetIntrinsic = require('get-intrinsic');
 
 var $Error = GetIntrinsic('%Error%');
 
@@ -20,12 +17,7 @@ function AggregateError(errors, message) {
 	OrdinarySetPrototypeOf(error, proto); // eslint-disable-line no-use-before-define
 	delete error.constructor;
 
-	var errorsList = IterableToList(errors, getIteratorMethod({
-		AdvanceStringIndex: AdvanceStringIndex,
-		GetMethod: GetMethod,
-		IsArray: IsArray,
-		Type: Type
-	}, errors));
+	var errorsList = IteratorToList(GetIterator(errors, 'sync'));
 	CreateDataPropertyOrThrow(error, 'errors', errorsList);
 
 	return error;
