@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.10](https://github.com/es-shims/AggregateError/compare/v1.0.9...v1.0.10) - 2023-08-26
+
+### Commits
+
+- [Deps] update `define-properties`, `es-abstract`, `get-intrinsic` [`567696f`](https://github.com/es-shims/AggregateError/commit/567696f56631c565c0af7937f9dde93d96e2914d)
+- [Tests] remove invalid receiver tests; add "as a function" tests [`97e050d`](https://github.com/es-shims/AggregateError/commit/97e050d7b387cc57f8fd47c4768033c62f26535f)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `aud`, `es6-shim`, `object-inspect`, `tape` [`c6fbf1d`](https://github.com/es-shims/AggregateError/commit/c6fbf1dbafb8c5a6f96cd082079c113343451d71)
+- [Deps] update `es-abstract` [`138527c`](https://github.com/es-shims/AggregateError/commit/138527c9d0b10beaf1732f4c3cc603ca095c29d8)
+- [Dev Deps] update `aud` [`e98e027`](https://github.com/es-shims/AggregateError/commit/e98e0274a5e370eba5659fb6a6f1c8a3eb114bd9)
+
 ## [v1.0.9](https://github.com/es-shims/AggregateError/compare/v1.0.8...v1.0.9) - 2022-11-02
 
 ### Commits
