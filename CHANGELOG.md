@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.11](https://github.com/es-shims/AggregateError/compare/v1.0.10...v1.0.11) - 2023-09-13
+
+### Commits
+
+- [Refactor] use `define-data-property`, `set-function-name` [`68b182f`](https://github.com/es-shims/AggregateError/commit/68b182f399b2522fedcdbc441f7efb4cd205bf5a)
+- [Deps] update `define-properties`, `set-function-name` [`8c0491e`](https://github.com/es-shims/AggregateError/commit/8c0491e73bd6adcd83e2833784b54ec1225f5e31)
+
 ## [v1.0.10](https://github.com/es-shims/AggregateError/compare/v1.0.9...v1.0.10) - 2023-08-26
 
 ### Commits
