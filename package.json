@@ -51,8 +51,8 @@
 		"define-data-property": "^1.1.1",
 		"define-properties": "^1.2.1",
 		"es-abstract": "^1.22.3",
+		"es-errors": "^1.1.0",
 		"function-bind": "^1.1.2",
-		"get-intrinsic": "^1.2.3",
 		"globalthis": "^1.0.3",
 		"has-property-descriptors": "^1.0.1",
 		"set-function-name": "^2.0.1"

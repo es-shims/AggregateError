@@ -7,9 +7,7 @@ var hasPropertyDescriptors = require('has-property-descriptors')();
 var IteratorToList = require('es-abstract/2023/IteratorToList');
 var OrdinarySetPrototypeOf = require('es-abstract/2023/OrdinarySetPrototypeOf');
 
-var GetIntrinsic = require('get-intrinsic');
-
-var $Error = GetIntrinsic('%Error%');
+var $Error = require('es-errors');
 
 // eslint-disable-next-line func-style
 function AggregateError(errors, message) {
