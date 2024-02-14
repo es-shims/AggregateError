@@ -48,13 +48,13 @@
 	},
 	"homepage": "https://github.com/es-shims/AggregateError#readme",
 	"dependencies": {
-		"define-data-property": "^1.1.1",
+		"define-data-property": "^1.1.4",
 		"define-properties": "^1.2.1",
-		"es-abstract": "^1.22.3",
-		"es-errors": "^1.1.0",
+		"es-abstract": "^1.22.4",
+		"es-errors": "^1.3.0",
 		"function-bind": "^1.1.2",
 		"globalthis": "^1.0.3",
-		"has-property-descriptors": "^1.0.1",
+		"has-property-descriptors": "^1.0.2",
 		"set-function-name": "^2.0.1"
 	},
 	"devDependencies": {
