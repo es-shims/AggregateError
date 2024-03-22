@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.13](https://github.com/es-shims/AggregateError/compare/v1.0.12...v1.0.13) - 2024-03-22
+
+### Commits
+
+- [Deps] update `es-abstract`, `set-function-name` [`8a923d8`](https://github.com/es-shims/AggregateError/commit/8a923d8d6c52f49c6a59ac0cf87c028d5fc79d5a)
+- [actions] remove redundant finisher [`7b4a423`](https://github.com/es-shims/AggregateError/commit/7b4a4232024ac8658f39d34d7b18c1c4adbd1751)
+- [Deps] update `define-data-property`, `es-abstract`, `es-errors`, `has-property-descriptors` [`dac80ec`](https://github.com/es-shims/AggregateError/commit/dac80ecaaa2debcf09caded760b3aa18a189a226)
+- [Dev Deps] update `tape` [`aa3ff65`](https://github.com/es-shims/AggregateError/commit/aa3ff65b715b45ef77286c6307df987118451635)
+
 ## [v1.0.12](https://github.com/es-shims/AggregateError/compare/v1.0.11...v1.0.12) - 2024-02-04
 
 ### Commits
