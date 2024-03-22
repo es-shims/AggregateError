@@ -1,11 +1,11 @@
 'use strict';
 
-var CreateDataPropertyOrThrow = require('es-abstract/2023/CreateDataPropertyOrThrow');
+var CreateDataPropertyOrThrow = require('es-abstract/2024/CreateDataPropertyOrThrow');
 var CreateMethodProperty = require('es-abstract/2023/CreateMethodProperty');
-var GetIterator = require('es-abstract/2023/GetIterator');
+var GetIterator = require('es-abstract/2024/GetIterator');
 var hasPropertyDescriptors = require('has-property-descriptors')();
-var IteratorToList = require('es-abstract/2023/IteratorToList');
-var OrdinarySetPrototypeOf = require('es-abstract/2023/OrdinarySetPrototypeOf');
+var IteratorToList = require('es-abstract/2024/IteratorToList');
+var OrdinarySetPrototypeOf = require('es-abstract/2024/OrdinarySetPrototypeOf');
 
 var $Error = require('es-errors');
 
@@ -15,7 +15,7 @@ function AggregateError(errors, message) {
 	OrdinarySetPrototypeOf(error, proto); // eslint-disable-line no-use-before-define
 	delete error.constructor;
 
-	var errorsList = IteratorToList(GetIterator(errors, 'sync'));
+	var errorsList = IteratorToList(GetIterator(errors, 'SYNC'));
 	CreateDataPropertyOrThrow(error, 'errors', errorsList);
 
 	return error;
