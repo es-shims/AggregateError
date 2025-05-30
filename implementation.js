@@ -1,11 +1,11 @@
 'use strict';
 
-var CreateDataPropertyOrThrow = require('es-abstract/2024/CreateDataPropertyOrThrow');
-var CreateMethodProperty = require('es-abstract/2023/CreateMethodProperty');
-var GetIterator = require('es-abstract/2024/GetIterator');
+var CreateDataPropertyOrThrow = require('es-abstract/2025/CreateDataPropertyOrThrow');
+var CreateNonEnumerableDataPropertyOrThrow = require('es-abstract/2023/CreateNonEnumerableDataPropertyOrThrow');
+var GetIterator = require('es-abstract/2025/GetIterator');
 var hasPropertyDescriptors = require('has-property-descriptors')();
-var IteratorToList = require('es-abstract/2024/IteratorToList');
-var OrdinarySetPrototypeOf = require('es-abstract/2024/OrdinarySetPrototypeOf');
+var IteratorToList = require('es-abstract/2025/IteratorToList');
+var OrdinarySetPrototypeOf = require('es-abstract/2025/OrdinarySetPrototypeOf');
 
 var $Error = require('es-errors');
 
@@ -25,13 +25,9 @@ if (hasPropertyDescriptors) {
 }
 var proto = AggregateError.prototype;
 
-if (
-	!CreateMethodProperty(proto, 'constructor', AggregateError)
-	|| !CreateMethodProperty(proto, 'message', '')
-	|| !CreateMethodProperty(proto, 'name', 'AggregateError')
-) {
-	throw new $Error('unable to install AggregateError.prototype properties; please report this!');
-}
+CreateNonEnumerableDataPropertyOrThrow(proto, 'constructor', AggregateError);
+CreateNonEnumerableDataPropertyOrThrow(proto, 'message', '');
+CreateNonEnumerableDataPropertyOrThrow(proto, 'name', 'AggregateError');
 
 OrdinarySetPrototypeOf(AggregateError.prototype, Error.prototype);
 
