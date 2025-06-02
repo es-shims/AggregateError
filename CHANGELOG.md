@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.14](https://github.com/es-shims/AggregateError/compare/v1.0.13...v1.0.14) - 2025-06-01
+
+### Commits
+
+- [Deps] update `es-abstract`, `globalthis` [`ddcdc9d`](https://github.com/es-shims/AggregateError/commit/ddcdc9dbf94196870db314cb2acbe80098035ecf)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `auto-changelog`, `for-each`, `object-inspect`, `tape` [`f760355`](https://github.com/es-shims/AggregateError/commit/f760355314b4a80b8135a04ac51d557683faa441)
+- [Tests] replace `aud` with `npm audit` [`8497f42`](https://github.com/es-shims/AggregateError/commit/8497f425c13a343c84b7be39f1ae1b7bce99c497)
+- [Dev Deps] add missing peer dep [`657a7ad`](https://github.com/es-shims/AggregateError/commit/657a7ade36e5e47af7c2ccdb685505cb54e0e45f)
+
 ## [v1.0.13](https://github.com/es-shims/AggregateError/compare/v1.0.12...v1.0.13) - 2024-03-22
 
 ### Commits
