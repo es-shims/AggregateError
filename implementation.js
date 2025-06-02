@@ -1,7 +1,7 @@
 'use strict';
 
 var CreateDataPropertyOrThrow = require('es-abstract/2025/CreateDataPropertyOrThrow');
-var CreateNonEnumerableDataPropertyOrThrow = require('es-abstract/2023/CreateNonEnumerableDataPropertyOrThrow');
+var CreateNonEnumerableDataPropertyOrThrow = require('es-abstract/2025/CreateNonEnumerableDataPropertyOrThrow');
 var GetIterator = require('es-abstract/2025/GetIterator');
 var hasPropertyDescriptors = require('has-property-descriptors')();
 var IteratorToList = require('es-abstract/2025/IteratorToList');
