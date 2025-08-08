@@ -21,7 +21,7 @@
 		"postlint": "es-shim-api --bound",
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
-		"posttest": "npx npm@\">= 0.10\" audit --production",
+		"posttest": "npx npm@\">= 10.2\" audit --production",
 		"tests-only": "nyc tape 'test/**/*.js'"
 	},
 	"repository": {
